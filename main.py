@@ -24,7 +24,6 @@ egestas erat #tweetext quam, ut faucibus eros #frasier congue et. In blandit,
 lobortis, tortor nisl facilisis leo, at tristique #frasistas augue risus
  eu risus."""))
 
-
 print(delete_emoticons("""Lorem ipsum dolor
  sit amet, consectetur :> adipiscing elit. Sed #texting eget :-) mattis sem.
   Mauris #frasista
