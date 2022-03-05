@@ -1,11 +1,12 @@
 import re
 
 
-"""Function to remove some emoticons from text"""
+"""Function to show some selected emoticons from text"""
 
 
-def delete_emoticons(text: str) -> str:
-    """Enter a text as a string parameter and get it
-         without any unwanted characters"""
-    result = re.sub("[:;][)\-(<>]+", '', text)
-    return result
+def extract_emoticons(text: str):
+    """Enter a text as a string parameter and get
+        the result as extracted emoticons"""
+    result = re.findall(r"[:;][)\-(<>]+", text)
+    for emoticon in result:
+        print(emoticon)
