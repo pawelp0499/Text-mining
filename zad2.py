@@ -1,11 +1,13 @@
 import re
 
 
-"""Function to remove #hashtags from text"""
+"""Function to show hashtags from text"""
 
 
-def delete_hashtags(text: str) -> str:
-    """Enter a text as a string parameter and get it
-         without any unwanted characters"""
-    result = re.sub("#[^\s]+", '', text)
-    return result
+def extract_hashtags(text: str):
+    """Enter a text as a string parameter and get
+        the result as extracted hashtags"""
+    result = re.findall("#[^\s]+", text)
+    for hashtag in result:
+        print(hashtag)
+
