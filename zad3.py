@@ -3,7 +3,7 @@ from nltk.stem.porter import *
 
 def stemmer(text: str) -> list:
     ps = PorterStemmer()
-    lala = list(text.split(" "))
+    str_as_list = list(text.split(" "))
 
-    for w in lala:
+    for w in str_as_list:
         print(ps.stem(w))
