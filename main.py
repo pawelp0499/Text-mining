@@ -1,5 +1,6 @@
 from zad1 import clear_text
 from zad2 import remove_stop_words
+from zad3 import *
 
 
 print(clear_text("""<div>Lorem IPSUM dolor 11 sit amet, consectetur :>
@@ -14,3 +15,5 @@ text_cleared = clear_text("""When I first met her she was very quiet.
                                 to New York.""")
 
 print(remove_stop_words(text_cleared))
+
+stemmer('programmer developed function for stemming words')
