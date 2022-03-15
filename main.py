@@ -3,3 +3,7 @@ from services.clear_text import clear_text
 from services.stem_text import stemmer
 
 data = read_file('./data/true.csv')
+
+titles = list()
+for row in data:
+    titles.
