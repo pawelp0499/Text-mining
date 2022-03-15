@@ -16,4 +16,4 @@ text_cleared = clear_text("""When I first met her she was very quiet.
 
 print(remove_stop_words(text_cleared))
 
-stemmer('programmer developed function for stemming words')
+print(stemmer('programmer developed function for stemming words'))
