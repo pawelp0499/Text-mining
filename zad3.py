@@ -5,5 +5,7 @@ def stemmer(text: str) -> list:
     ps = PorterStemmer()
     str_as_list = list(text.split(" "))
 
+    stem = []
     for w in str_as_list:
-        print(ps.stem(w))
+        stem.append(ps.stem(w))
+    return stem
