@@ -1,16 +1,29 @@
-from services.read_file import read_file
-from wordcloud import *
-import matplotlib.pyplot as plt
+import pandas as pd
+from services.clear_text import clear_text
+from services.text_tokenizer import *
+draw_wordcloud, text_tokenizer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+import numpy as np
 
 
-read_and_cleaned_csv = read_file("./data/true.csv", "title")
-print(read_and_cleaned_csv)
+def main(name):
+    true_posts = pd.read_csv('./data/True.csv', usecols=['title', 'text'])
+    fake_posts = pd.read_csv('./data/Fake.csv', usecols=['title', 'text'])
 
-text = read_and_cleaned_csv[0]
-wordcloud = WordCloud(width=640, height=480,
-                      background_color='white').generate(text)
+    entire_text = ' '.join(true_posts['title'].to_list())
+    clear_text = clear_text(entire_text)
+    tokens = text_tokenizer(clear_text)
 
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
-plt.savefig('./images/wordcloud.png')
-plt.show()
+    vectorizer = TfidfVectorizer(tokenizer=text_tokenizer)
+    X_transform = vectorizer.fit_transform(true_posts['title'])
+    print(np.asarray(X_transform)[0])
+
+    #uniques = list(set(tokens))
+    #bow = {unique: tokens.count(unique) for unique in uniques}
+    #draw_wordcloud(bow, 'word cloud')
+
+
+if __name__ == '__main__':
+    main('PyCharm')
+
+
