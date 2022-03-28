@@ -1,11 +1,12 @@
 from nltk.stem.porter import *
+from nltk import word_tokenize
 
 
 def stemmer(text: str) -> list:
     ps = PorterStemmer()
-    str_as_list = list(text.split(" "))
 
+    words = word_tokenize(text)
     stem = []
-    for w in str_as_list:
+    for w in words:
         stem.append(ps.stem(w))
     return stem
