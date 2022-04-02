@@ -1,2 +1,5 @@
-# Text-mining
-Text Mining in Python (as a part of the University Classes)
+# Qualitative Data Analysis and Text Mining Classes
+
+**Branches content:**
+
+🔸 '**lab1**' - introduction to regex library
