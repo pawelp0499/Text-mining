@@ -8,3 +8,5 @@ Welcome in Qualitative Data Analysis and Text Mining (Analiza danych jakościowy
 🔸 '**lab2**' Branch - clearing text with regex cd., removing stop words, stemming and lemmatization with nltk library
 
 🔸 '**lab3**' Branch - WordCloud
+
+🔸 '**lab4**' Branch - tokenization and vectorization of text with scikit-klearn library
