@@ -9,4 +9,4 @@ Welcome in Qualitative Data Analysis and Text Mining (Analiza danych jakościowy
 
 🔸 '**lab3**' Branch - WordCloud
 
-🔸 '**lab4**' Branch - tokenization and vectorization of text with scikit-klearn library
+🔸 '**lab4**' Branch - tokenization and vectorization of text with scikit-klearn library, operations on numpy arrays
