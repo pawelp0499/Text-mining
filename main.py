@@ -18,6 +18,7 @@ array = X_transform_sample.toarray()
 """
 Display top 10 tokens
 """
+
 column_sum = np.sum(array, axis=0)
 max_val = np.argpartition(column_sum, -10)[-10:]
 top_10 = column_sum[max_val]
