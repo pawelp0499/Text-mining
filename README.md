@@ -2,4 +2,14 @@
 
 **Branch content:**
 
-🔸 '**lab4**' Branch - tokenization and vectorization of text with scikit-klearn library
+🔸 '**lab5**' Branch - classifiers 
+
+a. decision tree
+
+b. random forest
+
+c. SVM
+
+d. AdaBoost
+
+e. Bagging
