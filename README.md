@@ -2,14 +2,10 @@
 
 **Branch content:**
 
-🔸 '**lab5**' Branch - classifiers 
+🔸 '**entity_matching**' Branch - calculation of distance and similarity
 
-a. decision tree
+a. euclidean similarity
 
-b. random forest
+b. cosine distance 
 
-c. SVM
-
-d. AdaBoost
-
-e. Bagging
+c. cosine similarity
