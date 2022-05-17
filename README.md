@@ -12,3 +12,5 @@ Welcome in Qualitative Data Analysis and Text Mining (Analiza danych jakościowy
 🔸 '**lab4**' Branch - tokenization and vectorization of text with scikit-klearn library, operations on numpy arrays, visualizations with matplotlib
 
 🔸 '**lab5**' Branch - text classification with decision tree, random forest, SVM, AdaBoost, Bagging
+
+🔸 '**entity_matching**' Branch - calculation of distance and similarity - euclidean similarity, cosine distance, cosine similarity
