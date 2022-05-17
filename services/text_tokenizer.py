@@ -5,8 +5,8 @@ from services.delete_stopwords import stopwords_del
 
 def text_tokenizer(text: str) -> list:
     cleaned = clear_text(text)
-    deleted = stopwords_del(cleaned)
-    stemmed = stemmer(deleted)
+    stopw = stopwords_del(cleaned)
+    stemmed = stemmer(stopw)
     word_list = []
     for word in stemmed:
         if len(word) > 3:
