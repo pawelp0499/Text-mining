@@ -14,3 +14,12 @@ Welcome in Qualitative Data Analysis and Text Mining (Analiza danych jakościowy
 🔸 '**lab5**' Branch - text classification with decision tree, random forest, SVM, AdaBoost, Bagging
 
 🔸 '**entity_matching**' Branch - calculation of distance and similarity - euclidean similarity, cosine distance, cosine similarity
+
+🔸 '**project**' Branch - NLP project containing the analysis of English Premier League tweets about top clubs (wordcloud, tokens, documents and visualizations) and classification using the following classifiers:
+
+* Multinomial Logistic Regression
+* Decision Tree
+* Random Forest
+* Gradient Boosting
+* MLP
+* Bagging
