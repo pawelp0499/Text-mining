@@ -1,10 +1,13 @@
-from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
 
-def stopwords_del(text):
-    eng_stopwords = stopwords.words('english')
-    token = word_tokenize(text)
-    tokens_without_sw = [word for word in token if
-                         word not in eng_stopwords]
-    return ' '.join([str(i) for i in tokens_without_sw])
+def stopwords_del(text: str):
+    stop_words = stopwords.words("english")
+    word_token = word_tokenize(text)
+    return [w for w in word_token if not w.lower() in stop_words]
+
+
+def stopwords_del_tok(text: str):
+    stop_words = stopwords.words("english")
+    return [w for w in text if not w.lower() in stop_words]

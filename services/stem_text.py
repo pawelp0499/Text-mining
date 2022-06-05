@@ -1,12 +1,14 @@
-from nltk.stem.porter import *
-from nltk import word_tokenize
+from nltk import PorterStemmer
 
 
-def stemmer(text: str) -> list:
+def stemmer(word: str) -> str:
     ps = PorterStemmer()
-
-    words = word_tokenize(text)
-    stem = []
-    for w in words:
-        stem.append(ps.stem(w))
-    return stem
+    return ps.stem(word)
+    
+    
+def stemming_list(words_without_stopwords: str) -> list:
+    ps = PorterStemmer()
+    stem_list = []
+    for word in words_without_stopwords:
+        stem_list.append(ps.stem(word))
+    return stem_list

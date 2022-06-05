@@ -1,14 +1,12 @@
-from services.clear_text import clear_text
+from services.clean_text import clean_text
 from services.stem_text import stemmer
-from services.delete_stopwords import stopwords_del
+from services.delete_stopwords import stopwords_del_tok
+from nltk.tokenize import word_tokenize
 
 
-def text_tokenizer(text: str) -> list:
-    cleaned = clear_text(text)
-    deleted = stopwords_del(cleaned)
-    stemmed = stemmer(deleted)
-    word_list = []
-    for word in stemmed:
-        if len(word) > 3:
-            word_list.append(word)
-    return word_list
+def text_tokenizer(text: str):
+    cleaned = clean_text(text)
+    tokens = word_tokenize(cleaned)
+    without_stopwords = stopwords_del_tok(tokens)
+
+    return [stemmer(w) for w in without_stopwords if len(w) > 3]
